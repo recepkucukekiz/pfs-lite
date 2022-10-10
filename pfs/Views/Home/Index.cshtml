@@ -1,0 +1,28 @@
+﻿@{
+    ViewData["Title"] = "PFS";
+}
+<!-- Header -->
+<header id="header" class="ex-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Download & Upload Files</h1>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</header> <!-- end of ex-header -->
+<!-- end of header -->
+
+
+<div class="ex-basic-2">
+    <div class="container my-5">
+        <div class="col-lg-9 m-auto">
+            <div class="w-50 mt-4 d-flex flex-wrap justify-content-around m-auto">
+                @*<a asp-controller="Upload" asp-action="BufferUpload" asp-area="" class="btn-solid-reg my-2">Stream Upload</a>*@
+                <a asp-controller="Upload" asp-action="StreamUpload" asp-area="" class="btn-solid-reg my-2">Buffered Upload</a>
+                <a asp-controller="Download" asp-action="Index" asp-area="" class="btn-solid-reg my-2">Download</a>
+            </div>
+            <!-- end of sign up form -->
+        </div> <!-- end of col -->
+    </div> <!-- end of container -->
+</div> <!-- end of ex-basic-2 -->

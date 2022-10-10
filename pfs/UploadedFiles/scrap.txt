@@ -1,0 +1,22 @@
+Common:
+Title
+imdb rating {score, oy sayısı, popularity?}
+release year
+Certification
+description
+genres
+top cast
+more like this?
+storyline
+'> keywords
+Release date
+Countries of origin
+Languages
+
+Movies:
+director
+length
+
+TV Shows:
+creator
+episodes count!

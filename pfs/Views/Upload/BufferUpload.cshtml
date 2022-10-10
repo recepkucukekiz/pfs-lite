@@ -1,0 +1,59 @@
+﻿@{
+    ViewData["Title"] = "Upload";
+}
+<!-- Header -->
+<header id="header" class="ex-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>Upload Files<small style="font-size:initial;"> with Buffer</small></h1>
+            </div> <!-- end of col -->
+        </div> <!-- end of row -->
+    </div> <!-- end of container -->
+</header> <!-- end of ex-header -->
+<!-- end of header -->
+<!-- Privacy Content -->
+<div class="ex-basic-2">
+    <div class="container my-5">
+        <div class="col-lg-6 m-auto">
+            <h4 class="ml-4">You can choose a file and upload</h4>
+            <!-- Sign Up Form -->
+            <div class="form-container">
+                <form method="post" data-toggle="validator" data-focus="false" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <input type="file" class="form-file-select" name="file" required>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control-input" name="password" required>
+                        <label class="label-control" for="lpassword">Password</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group m-auto" style="max-width: 50%;">
+                        <button type="submit" class="form-control-submit-button">Upload</button>
+                    </div>
+                    <div class="form-message mt-4">
+                        <div id="lmsgSubmit" class="h3 text-center hidden">
+                            @if (ViewBag.Message != null)
+                            {
+                                <div class="alert" style="margin-top:20px">
+                                    @ViewBag.Message
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </form>
+            </div> <!-- end of form container -->
+            <!-- end of sign up form -->
+
+        </div> <!-- end of col -->
+    </div> <!-- end of container -->
+</div> <!-- end of ex-basic-2 -->
+<!-- end of privacy content -->
+@*<form method="post" enctype="multipart/form-data">
+    <label>File</label>
+    <input type="file" name="file" />
+    <label>Password</label>
+    <input type="password" name="password" required/>
+    <button type="submit">Upload File</button>
+</form>*@
